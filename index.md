@@ -1,3 +1,9 @@
+---
+layout: default
+title: Personal Certificates Best Practice
+permalink: /index.html
+---
+
 ### Work in progress...
 These pages are currently being written to help you use personal certificates.
 
