@@ -22,11 +22,11 @@ Thanks. What is it?
 
 > It's your password for my document share.
 
-Ah, nice. But why didn\'t you just send it to me by email?
+Ah, nice. But why didn't you just send it to me by email?
 
 > Well duh! Don't you know sending sensitive information by email is unsafe? It can easily be intercepted by just about anyone!
 
-Well, if you encrypt your email they can\'t!
+Well, if you encrypt your email they can't!
 
 > Encrypt my email? How can I do that?
 
@@ -34,11 +34,11 @@ Just install a personal certificate and click the lock on the message before you
 
 > A personal certificate? What's that?
 
-It\'s a digital statement that you are the owner of a public key.
+It's a digital statement that you are the owner of a public key.
 
 > Uh... what?
 
-A public key. It\'s the digital equivalent of a key. You use it to \"lock\" a message so that noone can look inside.
+A public key. It's the digital equivalent of a key. You use it to \"lock\" a message so that noone can look inside.
 
 > Right. Except for the recipient, I assume?
 
@@ -50,7 +50,7 @@ Yes, uhm, no, not exactly. I would use my private key instead.
 
 > Wait. Private key? Where did that come from?
 
-Well, there\'s two keys. They come in pairs. You create a key pair, consisting of a private key and a public key. The public key is used for encryption, the private key for decryption. They are devised such that what is encrypted with the public key, can only be decrypted with the corresponding private key.
+Well, there's two keys. They come in pairs. You create a key pair, consisting of a private key and a public key. The public key is used for encryption, the private key for decryption. They are devised such that what is encrypted with the public key, can only be decrypted with the corresponding private key.
 
 > Sounds complicated. Why not just use a single key, and use that for both locking and unlocking? Just as with the key to my locker?
 
@@ -67,25 +67,25 @@ Exactly!
 > But how does using public and private keys change this?
 
 Well, because the public key is used for encryption, the public key can be shared by anyone. They can all use the same key for encrypting messages to the same recipient.
-Remember, it\'s a public key!
+Remember, it's a public key!
 
 > Makes sence. And the private key is kept secret, right?
 
-Right. That\'s why it\'s called private.
+Right. That's why it's called private.
 
 > So, let me get this straight. Public and private keys are like a pair of keys for my locker, where I can use the public one to lock it, and I need the private one to open it again. I can give the public key to anyone, so they can put something valuable in it and lock it. And I will be the only one who can get to this valueable because I am the only one with the private key?
 
-You got it! Isn\'t that beautiful? It\'s called public key cryptography.
+You got it! Isn't that beautiful? It's called public key cryptography.
 
 ## Act 2, where Alice explains that you also need signing/authentication
 
 > So, let's get started. I'll send you an encrypted message. Give me your public key!
 
-Okay, it\'s (9007, 114381625757888867669235779976146612010218296721242362562561842935706935245733897830597123563958705058989075147599290026879543541)
+Okay, it's (9007, 114381625757888867669235779976146612010218296721242362562561842935706935245733897830597123563958705058989075147599290026879543541)
 
 > Uhm, that's a public key?!
 
-Yes, a public key is just two numbers (and so is a private key), crafted in a very specific way. But that\'s irrelevant. You store those keys in a file for instance and let software use those keys for encryption and decryption.
+Yes, a public key is just two numbers (and so is a private key), crafted in a very specific way. But that's irrelevant. You store those keys in a file for instance and let software use those keys for encryption and decryption.
 
 > Good. Maybe you better send me your public key in an email then.
 
@@ -109,7 +109,7 @@ How can you be sure? Remember, email is not secure: anyone could have sent that 
 
 > So?
 
-well, someone may have sent you *their* public key, pretending to be me. If you encrypt a message intended for me with that public key, that someone will be able to decrypt it! Remember, a public key is just two numbers. There\'s nothing in a public key stating who\'s key it is.
+well, someone may have sent you *their* public key, pretending to be me. If you encrypt a message intended for me with that public key, that someone will be able to decrypt it! Remember, a public key is just two numbers. There's nothing in a public key stating who's key it is.
 
 > Oops. Yes, I see. So sending public keys by email is a no-go.
 
@@ -117,11 +117,11 @@ Correct.
 
 > So how *do* I get your public key?
 
-There\'s several ways.  I could give it to you in person on a USB drive for example, ...
+There's several ways.  I could give it to you in person on a USB drive for example, ...
 
-> Hmm. Yes, I guess that way I would be sure it\'s your key. But wait a minute, that sounds silly!  All I wanted to do was send you a password. If we need to meet in person, I might as well put the password on the drive instead of the public key. I'm not sure your public key stuff is very useful.
+> Hmm. Yes, I guess that way I would be sure it's your key. But wait a minute, that sounds silly!  All I wanted to do was send you a password. If we need to meet in person, I might as well put the password on the drive instead of the public key. I'm not sure your public key stuff is very useful.
 
-Well, wait, there\'s more. First of all, you only need to exchange public keys once. From then on, you can encrypt many messages.
+Well, wait, there's more. First of all, you only need to exchange public keys once. From then on, you can encrypt many messages.
 
 > Ok, but what if I want to encrypt a message to someone in another country? Do I need to take a plane to meet this person first?
 
@@ -133,11 +133,11 @@ Using public key crypto!
 
 > What? That sounds like a catch-22!
 
-It\'s not. There\'s more magic in public key crypto. You see, It can be used to encrypt messages, but it can also be used to *sign* messages!
+It's not. There's more magic in public key crypto. You see, It can be used to encrypt messages, but it can also be used to *sign* messages!
 
 > You mean like signing a letter?
 
-Exactly! A signature is used to protect messages from forgery. The message cannot be manipulated if it is signed, and it is impossible to create someone else\'s signature.
+Exactly! A signature is used to protect messages from forgery. The message cannot be manipulated if it is signed, and it is impossible to create someone else's signature.
 
 > And all that can be done with public key crypto?
 
@@ -157,7 +157,7 @@ Think about it. The public and private keys are inverses of each other. What is 
 
 > Ok. But I still don't see why you would encrypt your message with your private key when everyone has the public key to decrypt it.
 
-But that\'s precisely the point. I *want* everyone to decrypt it. Remember, the message is not secret. I just want people to be able to verify that it\'s my message.
+But that's precisely the point. I *want* everyone to decrypt it. Remember, the message is not secret. I just want people to be able to verify that it's my message.
 
 > Ok, so how would I do that?
 
@@ -183,11 +183,11 @@ No, we can help each other with that!
 
 > What do you mean?
 
-Well, let\'s say I meet Carol in person somewhere.
+Well, let's say I meet Carol in person somewhere.
 
 > You mean my Carol?
 
-Yes. We both know Carol and let\'s say I'm having lunch with her. We can exchange keys in person during lunch. It she meets you later you can do the same.
+Yes. We both know Carol and let's say I'm having lunch with her. We can exchange keys in person during lunch. It she meets you later you can do the same.
 
 > We'll let Carol do the work of distributing our keys?
 
@@ -195,15 +195,15 @@ We could, but it can be more efficient. She doesn't have to carry our public key
 
 > Huh? Sign our public keys? What for?
 
-Think about it. You want to know my public key, right? And you trust Carol, right? Well, if Carol signs my public key, and she knows it\'s my public key because we met in person, and you know Carol\'s public key because you exchanged keys in person, I can simply send you my public key, together with Carol\'s signature on it in an email. You can authenticate my public key simply by verifying Carol\'s signature, using the public key of Carol, which you already have.
+Think about it. You want to know my public key, right? And you trust Carol, right? Well, if Carol signs my public key, and she knows it's my public key because we met in person, and you know Carol's public key because you exchanged keys in person, I can simply send you my public key, together with Carol's signature on it in an email. You can authenticate my public key simply by verifying Carol's signature, using the public key of Carol, which you already have.
 
 > I see. So it's a multi-step process?
 
-Indeed. And you can extend it to as many steps as you like. If you sign Carol\'s key, and exchange keys in person with Dave, then Dave can also veryfy signatures in email I send to him: he just needs your public key, Carol\'s public key (signed by you), and My public key (signed by Carol).
+Indeed. And you can extend it to as many steps as you like. If you sign Carol's key, and exchange keys in person with Dave, then Dave can also veryfy signatures in email I send to him: he just needs your public key, Carol's public key (signed by you), and My public key (signed by Carol).
 
 > Yes, I get it! And you and Dave never have to meet!
 
-Precisely. As long as there\'s a path between people, composed of signed public keys, people can trust each other\'s keys.
+Precisely. As long as there's a path between people, composed of signed public keys, people can trust each other's keys.
 
 > And that system actually works?
 
@@ -219,19 +219,19 @@ Well, it gets more likely if you exchange and sign keys with lots of people. The
 
 > Ok. But that means I may get stuck if such a path doesn't exist?
 
-Correct. But there\'s an alternative solution.
+Correct. But there's an alternative solution.
 
 > I was affraid you were going to say that. Are you going to throw more crypto my way?
 
-Not really. It\'s just that Web of Trust is not the only way to verify public keys. There\'s also this think called PKI.
+Not really. It's just that Web of Trust is not the only way to verify public keys. There's also this think called PKI.
 
 > PKI?
 
-Yes, PKI stands for Public Key Infrastructure, but never mind what that means. It\'s just a different model for establishing trust.
+Yes, PKI stands for Public Key Infrastructure, but never mind what that means. It's just a different model for establishing trust.
 
 > So how is it different from Web of Trust?
 
-It is actually quite similar, except that you have a few parties called Certification Authorities or CAs that do the key signing instead of everyone singing everybody else\'s keys.
+It is actually quite similar, except that you have a few parties called Certification Authorities or CAs that do the key signing instead of everyone singing everybody else's keys.
 
 > Is that better somehow?
 
@@ -247,7 +247,7 @@ Not really, its just a digital document, signed by the CA, that states that some
 
 > So just like Carol's signature on my public key?
 
-Basically, yes. If Carol was a CA, she would be signing *many* people\'s public keys. Not just her friends, but anybody. It would be her business. That business will only be profitable if she takes her job seriously, that is by thorougly verifying the identity of people whose public keys she signs.
+Basically, yes. If Carol was a CA, she would be signing *many* people's public keys. Not just her friends, but anybody. It would be her business. That business will only be profitable if she takes her job seriously, that is by thorougly verifying the identity of people whose public keys she signs.
 
 > So, back to our original problem. I need to verify your public key. How does that work with a CA?
 
@@ -259,12 +259,12 @@ Yes!
 
 > But wait, I see another catch-22: I want to know your public key, and to verify that this public key is yours I need to validate your certificate, which was signed by the CA. But boom! To verify the signature on the CA I need the CA's public key. I am back to square 1 again! How do I verify the CA's public key?
 
-In fact: you don\'t. CA keys, sometimes called root keys, are contained in self-sign certificates. These certificates are issued by the CA's themselves.
+In fact: you don't. CA keys, sometimes called root keys, are contained in self-sign certificates. These certificates are issued by the CA's themselves.
 
 > That sounds like a catch-22 in itself!
 
-Yes, but that\'s what I meant when I said that the downside of a PKI is that everybode must trust the root CA\'s. Their self-signed certificates are often built-into communication software like browsers and mail clients. Those certificates are called *trust anchors*. This is how a PKI gets bootstrapped.
+Yes, but that's what I meant when I said that the downside of a PKI is that everybode must trust the root CA's. Their self-signed certificates are often built-into communication software like browsers and mail clients. Those certificates are called *trust anchors*. This is how a PKI gets bootstrapped.
 
 > Oookay. So no catch-22 after all?
 
-Nope. Wonderful isn\'t it?
+Nope. Wonderful isn't it?
