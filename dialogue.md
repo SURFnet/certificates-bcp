@@ -10,7 +10,7 @@ permalink: /dialogue.html
 
 Alice and Bob
 
-## Act 1, where Alice explains to Bob what public key crypto is.
+## Act 1, where Alice explains to Bob what a public key is and what it is used for.
 
 Bob has asked Alice to drop by. He has something important to give to her.
 
@@ -36,9 +36,9 @@ Just install a personal certificate and click the lock on the message before you
 
 It's a digital statement that you are the owner of a public key.
 
-> Uh... what?
+> Uhh... a what?
 
-A public key. It's the digital equivalent of a key. You use it to \"lock\" a message so that noone can look inside.
+A public key. It's the digital equivalent of a padlock key. You use it to \"lock\" a message so that noone can look inside.
 
 > Right. Except for the recipient, I assume?
 
@@ -66,8 +66,7 @@ Exactly!
 
 > But how does using public and private keys change this?
 
-Well, because the public key is used for encryption, the public key can be shared by anyone. They can all use the same key for encrypting messages to the same recipient.
-Remember, it's a public key!
+Well, because the public key is used for encryption only, the public key can be shared by anyone. They can all use the same key for encrypting messages to the same recipient. Remember, it's a public key!
 
 > Makes sence. And the private key is kept secret, right?
 
@@ -77,7 +76,7 @@ Right. That's why it's called private.
 
 You got it! Isn't that beautiful? It's called public key cryptography.
 
-## Act 2, where Alice explains that you also need signing/authentication
+## Act 2, where Alice explains that you also need signatures.
 
 > So, let's get started. I'll send you an encrypted message. Give me your public key!
 
