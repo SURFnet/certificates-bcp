@@ -10,9 +10,9 @@ permalink: /dialogue.html
 
 Alice and Bob
 
-## Act 1, where Alice explains to Bob what a public key is and what it is used for.
+## Scene 1, where Alice explains to Bob what a public key is and what it is used for.
 
-Bob has asked Alice to drop by. He has something important to give to her.
+*Bob has asked Alice to drop by. He has something important to give to her.*
 
 Hey Bob, you wanted to see me?
 
@@ -30,7 +30,7 @@ Well, if you encrypt your email they can't!
 
 > Encrypt my email? How can I do that?
 
-Just install a personal certificate and click the lock on the message before you send it.
+Just install a personal [certificate][x509] and click the lock on the message before you send it.
 
 > A personal certificate? What's that?
 
@@ -38,7 +38,7 @@ It's a digital statement that you are the owner of a public key.
 
 > Uhh... a what?
 
-A public key. It's the digital equivalent of a padlock key. You use it to \"lock\" a message so that noone can look inside.
+A public key. It's the digital equivalent of a padlock key. You use it to "lock" a message so that noone can look inside.
 
 > Right. Except for the recipient, I assume?
 
@@ -74,15 +74,17 @@ Right. That's why it's called private.
 
 > So, let me get this straight. Public and private keys are like a pair of keys for my locker, where I can use the public one to lock it, and I need the private one to open it again. I can give the public key to anyone, so they can put something valuable in it and lock it. And I will be the only one who can get to this valueable because I am the only one with the private key?
 
-You got it! Isn't that beautiful? It's called public key cryptography.
+You got it! Isn't that beautiful? It's called [public key cryptography][pkc].
 
-## Act 2, where Alice explains that you also need signatures.
+## Scene 2, where Alice explains that you also need signatures.
+
+*Alice and Bob set down behind Bob's laptop. Bob is starting his mail client.*
 
 > So, let's get started. I'll send you an encrypted message. Give me your public key!
 
 Okay, it's (9007, 114381625757888867669235779976146612010218296721242362562561842935706935245733897830597123563958705058989075147599290026879543541)
 
-> Uhm, that's a public key?!
+> Uh, that's a public key?!
 
 Yes, a public key is just two numbers (and so is a private key), crafted in a very specific way. But that's irrelevant. You store those keys in a file for instance and let software use those keys for encryption and decryption.
 
@@ -170,13 +172,15 @@ But if they are, you know for sure that the message is authentic, and that the s
 
 > Wonderful! I think I get it!
 
-## Act 3, where Alice explains what a certificate is
+## Scene 3, where Alice explains what a certificate is
+
+**
 
 > So, Alice. I have been thinking about those digital signatures. Does this mean you *can* send me your public key in an email, provided you sign it with your private key?
 
 Unfortunately, no. There *is* a catch-22 here. The problem is that I need to know your public key to verify your signatures. If you sign your own public key, I end up in a chicken-or-egg situation.
 
-> I see. So were back to square one? Meeting everyone we want to communicate with in person?
+> I see. So were back to square one? Back to meeting everyone we want to communicate with in person?
 
 No, we can help each other with that!
 
@@ -184,7 +188,7 @@ No, we can help each other with that!
 
 Well, let's say I meet Carol in person somewhere.
 
-> You mean my Carol?
+> You mean my colleague Carol?
 
 Yes. We both know Carol and let's say I'm having lunch with her. We can exchange keys in person during lunch. It she meets you later you can do the same.
 
@@ -206,7 +210,7 @@ Precisely. As long as there's a path between people, composed of signed public k
 
 > And that system actually works?
 
-Yes, more or less. This so called Web-of-Trust model is used in a secure emailing system called _PGP_, which stands for Pretty Good Privacy.
+Yes, more or less. Of course, averyone must play by the rules and only sign keys they have verified in person. This so called Web-of-Trust model is used in a secure emailing system called _PGP_, which stands for [Pretty Good Privacy][pgp].
 
 > And I can use it to verify the public key of anyone in the world?
 
@@ -222,15 +226,15 @@ Correct. But there's an alternative solution.
 
 > I was affraid you were going to say that. Are you going to throw more crypto my way?
 
-Not really. It's just that Web of Trust is not the only way to verify public keys. There's also this think called PKI.
+Not really. It's just that Web of Trust is not the only way to verify public keys. There's also this thing called PKI.
 
 > PKI?
 
-Yes, PKI stands for Public Key Infrastructure, but never mind what that means. It's just a different model for establishing trust.
+Yes, PKI stands for [Public Key Infrastructure][pki], but never mind what that means. It's just a different model for establishing trust.
 
 > So how is it different from Web of Trust?
 
-It is actually quite similar, except that you have a few parties called Certification Authorities or CAs that do the key signing instead of everyone singing everybody else's keys.
+It is actually quite similar, except that you have a few parties called [Certification Authorities][ca] or CAs that do the key signing instead of everyone singing everybody else's keys.
 
 > Is that better somehow?
 
@@ -267,3 +271,10 @@ Yes, but that's what I meant when I said that the downside of a PKI is that ever
 > Oookay. So no catch-22 after all?
 
 Nope. Wonderful isn't it?
+
+[pki]: http://en.wikipedia.org/wiki/Public_key_infrastructure
+[pgp]: http://en.wikipedia.org/wiki/Pretty_Good_Privacy
+[pkc]: http://en.wikipedia.org/wiki/Public-key_cryptography
+[sign]: http://en.wikipedia.org/wiki/Digital_signature
+[x509]: http://en.wikipedia.org/wiki/Public_key_certificate
+[ca]: http://en.wikipedia.org/wiki/Certificate_authority
