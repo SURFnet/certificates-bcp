@@ -38,7 +38,7 @@ It's a digital statement that you are the owner of a public key.
 
 > Uhh... a what?
 
-A public key. It's the digital equivalent of a padlock key. You use it to "lock" a message so that noone can look inside.
+A public key. It's the digital equivalent of a padlock key. You use it to "lock" a message so that no-one can look inside.
 
 > Right. Except for the recipient, I assume?
 
@@ -250,7 +250,7 @@ Not really, its just a digital document, signed by the CA, that states that some
 
 > So just like Carol's signature on my public key?
 
-Basically, yes. If Carol was a CA, she would be signing *many* people's public keys. Not just her friends, but anybody. It would be her business. That business will only be profitable if she takes her job seriously, that is by thoroughy verifying the identity of people whose public keys she signs.
+Basically, yes. If Carol was a CA, she would be signing *many* people's public keys. Not just her friends, but anybody. It would be her business. That business will only be profitable if she takes her job seriously, that is by thoroughly verifying the identity of people whose public keys she signs.
 
 > So, back to our original problem. I need to verify your public key. How does that work with a CA?
 
