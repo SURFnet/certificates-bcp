@@ -147,7 +147,7 @@ Yes! Suppose I want to send you a message, and I want to sign it so you can be a
 
 Yes, and I can achieve this by "encrypting" my message with my private key.
 
-> Uhm. Your private key? You mean your public key! Encryption is dan with the public key, right?
+> Uhm. Your private key? You mean your public key! Encryption is done with a public key, right?
 
 No, I mean my private key. Look, I am not trying to hide my message from eavesdroppers. I am trying to prove authenticity.
 
@@ -161,7 +161,7 @@ But that's precisely the point. I *want* everyone to decrypt it. Remember, the m
 
 > Ok, so how would I do that?
 
-Simple. What I send you are a message plus a signature. The signature is nothing but an private-key-encrypted version of the message. If you use my public key to decrypt the signature, you obtain the original message. By comparing the message with the decrypted signature you can authenticate the message.
+Simple. What I send to you are a message plus a signature. The signature is nothing but an private-key-encrypted version of the message. If you use my public key to decrypt the signature, you obtain the original message. By comparing the message with the decrypted signature you can authenticate the message.
 
 > Wow. I'm starting to see what you mean. The message and the decrypted signature should be the same, right?
 
