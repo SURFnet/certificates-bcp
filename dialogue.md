@@ -68,11 +68,11 @@ Exactly!
 
 Well, because the public key is used for encryption only, the public key can be shared by anyone. They can all use the same key for encrypting messages to the same recipient. Remember, it's a public key!
 
-> Makes sence. And the private key is kept secret, right?
+> Makes sense. And the private key is kept secret, right?
 
 Right. That's why it's called private.
 
-> So, let me get this straight. Public and private keys are like a pair of keys for my locker, where I can use the public one to lock it, and I need the private one to open it again. I can give the public key to anyone, so they can put something valuable in it and lock it. And I will be the only one who can get to this valueable because I am the only one with the private key?
+> So, let me get this straight. Public and private keys are like a pair of keys for my locker, where I can use the public one to lock it, and I need the private one to open it again. I can give the public key to anyone, so they can put something valuable in it and lock it. And I will be the only one who can get to this valuable because I am the only one with the private key?
 
 You got it! Isn't that beautiful? It's called [public key cryptography][pkc].
 
@@ -202,7 +202,7 @@ Think about it. You want to know my public key, right? And you trust Carol, righ
 
 > I see. So it's a multi-step process?
 
-Indeed. And you can extend it to as many steps as you like. If you sign Carol's key, and exchange keys in person with Dave, then Dave can also veryfy signatures in email I send to him: he just needs your public key, Carol's public key (signed by you), and My public key (signed by Carol).
+Indeed. And you can extend it to as many steps as you like. If you sign Carol's key, and exchange keys in person with Dave, then Dave can also verify signatures in email I send to him: he just needs your public key, Carol's public key (signed by you), and My public key (signed by Carol).
 
 > Yes, I get it! And you and Dave never have to meet!
 
@@ -210,7 +210,7 @@ Precisely. As long as there's a path between people, composed of signed public k
 
 > And that system actually works?
 
-Yes, more or less. Of course, averyone must play by the rules and only sign keys they have verified in person. This so called Web-of-Trust model is used in a secure emailing system called _PGP_, which stands for [Pretty Good Privacy][pgp].
+Yes, more or less. Of course, everyone must play by the rules and only sign keys they have verified in person. This so called Web-of-Trust model is used in a secure emailing system called _PGP_, which stands for [Pretty Good Privacy][pgp].
 
 > And I can use it to verify the public key of anyone in the world?
 
@@ -224,7 +224,7 @@ Well, it gets more likely if you exchange and sign keys with lots of people. The
 
 Correct. But there's an alternative solution.
 
-> I was affraid you were going to say that. Are you going to throw more crypto my way?
+> I was afraid you were going to say that. Are you going to throw more crypto my way?
 
 Not really. It's just that Web of Trust is not the only way to verify public keys. There's also this thing called PKI.
 
@@ -242,7 +242,7 @@ Not better or worse, just different. The pro is that there only need to be a sma
 
 > Ok, so let's assume everybody trusts them. What are the benefits then?
 
-Well, then everybody can go to a CA of their chosing, and have their public key signed in a certificate.
+Well, then everybody can go to a CA of their choosing, and have their public key signed in a certificate.
 
 > Wait, certificate? Is that another crypto feature?
 
@@ -250,7 +250,7 @@ Not really, its just a digital document, signed by the CA, that states that some
 
 > So just like Carol's signature on my public key?
 
-Basically, yes. If Carol was a CA, she would be signing *many* people's public keys. Not just her friends, but anybody. It would be her business. That business will only be profitable if she takes her job seriously, that is by thorougly verifying the identity of people whose public keys she signs.
+Basically, yes. If Carol was a CA, she would be signing *many* people's public keys. Not just her friends, but anybody. It would be her business. That business will only be profitable if she takes her job seriously, that is by thoroughy verifying the identity of people whose public keys she signs.
 
 > So, back to our original problem. I need to verify your public key. How does that work with a CA?
 
@@ -266,7 +266,7 @@ In fact: you don't. CA keys, sometimes called root keys, are contained in self-s
 
 > That sounds like a catch-22 in itself!
 
-Yes, but that's what I meant when I said that the downside of a PKI is that everybode must trust the root CA's. Their self-signed certificates are often built-into communication software like browsers and mail clients. Those certificates are called *trust anchors*. This is how a PKI gets bootstrapped.
+Yes, but that's what I meant when I said that the downside of a PKI is that everybody must trust the root CA's. Their self-signed certificates are often built-into communication software like browsers and mail clients. Those certificates are called *trust anchors*. This is how a PKI gets bootstrapped.
 
 > Oookay. So no catch-22 after all?
 
