@@ -32,7 +32,7 @@ Well, if you encrypt your email they can't!
 
 Just install a personal [certificate][x509] and click the lock on the message before you send it.
 
-> A personal certificate? What's that?
+> What lock? And what on earth is a personal certificate?
 
 It's a digital statement that you are the owner of a public key.
 
@@ -62,7 +62,7 @@ Well, for exchanging encrypted, sorry, "locked" messages  with several people, I
 
 > Hmmm. I see. You wouldn't want to use the same key with different people. They would be able to read each other's messages.
 
-Exactly!
+Exactly! And the number of keys you need grows exponentially with the number of people communicating...
 
 > But how does using public and private keys change this?
 
