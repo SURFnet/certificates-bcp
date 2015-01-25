@@ -1,3 +1,9 @@
+---
+layout: default
+title: Step-by-step instructions
+permalink: /steps.html
+---
+
 # Step-by-step instructions
 
 To obtain a certificate, you need to apply for one at a Certification Authority (CA).
