@@ -162,7 +162,7 @@ But that's precisely the point. I *want* everyone to decrypt it. Remember, the m
 
 > Ok, so how would I do that?
 
-Simple. What I send to you are a message plus a signature. The signature is nothing but an private-key-encrypted version of the message. If you use my public key to decrypt the signature, you obtain the original message. By comparing the message with the decrypted signature you can authenticate the message.
+Simple. What I send to you are a message plus a signature. The signature is nothing but a private-key-encrypted version of the message. If you use my public key to decrypt the signature, you obtain the original message. By comparing the message with the decrypted signature you can authenticate the message.
 
 > Wow. I'm starting to see what you mean. The message and the decrypted signature should be the same, right?
 
@@ -180,7 +180,7 @@ But if they are, you know for sure that the message is authentic, and that the s
 
 Unfortunately, no. There *is* a catch-22 here. The problem is that I need to know your public key to verify your signatures. If you sign your own public key, I end up in a chicken-or-egg situation.
 
-> I see. So were back to square one? Back to meeting everyone we want to communicate with in person?
+> I see. So we're back to square one? Back to meeting everyone we want to communicate with in person?
 
 No, we can help each other with that!
 
@@ -190,7 +190,7 @@ Well, let's say I meet Carol in person somewhere.
 
 > You mean my colleague Carol?
 
-Yes. We both know Carol and let's say I'm having lunch with her. We can exchange keys in person during lunch. It she meets you later you can do the same.
+Yes. We both know Carol and let's say I'm having lunch with her. We can exchange keys in person during lunch. If she meets you later you can do the same.
 
 > We'll let Carol do the work of distributing our keys?
 
@@ -202,7 +202,7 @@ Think about it. You want to know my public key, right? And you trust Carol, righ
 
 > I see. So it's a multi-step process?
 
-Indeed. And you can extend it to as many steps as you like. If you sign Carol's key, and exchange keys in person with Dave, then Dave can also verify signatures in email I send to him: he just needs your public key, Carol's public key (signed by you), and My public key (signed by Carol).
+Indeed. And you can extend it to as many steps as you like. If you sign Carol's key, and exchange keys in person with Dave, then Dave can also verify signatures in email I send to him: he just needs your public key, Carol's public key (signed by you), and my public key (signed by Carol).
 
 > Yes, I get it! And you and Dave never have to meet!
 
@@ -218,7 +218,7 @@ It depends. You can only do that when there is a trust-path from you to that per
 
 > And how likely is that?
 
-Well, it gets more likely if you exchange and sign keys with lots of people. The bigger your Web of Trust, the more likely a path exists.
+Well, it gets more likely if you exchange and sign keys with lots of people. The bigger your Web of Trust, the more likely it is that such a path exists.
 
 > Ok. But that means I may get stuck if such a path doesn't exist?
 
@@ -234,7 +234,7 @@ Yes, PKI stands for [Public Key Infrastructure][pki], but never mind what that m
 
 > So how is it different from Web of Trust?
 
-It is actually quite similar, except that you have a few parties called [Certification Authorities][ca] or CAs that do the key signing instead of everyone singing everybody else's keys.
+It is actually quite similar, except that you have a few parties called [Certification Authorities][ca] or CAs that do the key signing instead of everyone singing keys of people they have met.
 
 > Is that better somehow?
 
