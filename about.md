@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Personal Certificates Best Practice
-permalink: /index.html
+permalink: /about.html
 ---
 
 ### Work in progress...
